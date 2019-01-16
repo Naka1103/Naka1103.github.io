@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>結果</title>
+</head>
+
+<body>
+<div id="kekka" style="margin: 20px">
+    <h1>正解数は…</h1>
+    <div id="result"></div>
+    <br>
+    <div><a href="page%EF%BC%91.html">もう一度ゲームを行う</a></div>
+</div>
+    
+<script>
+        
+var result = document.getElementById("result");
+var hit = localStorage.hit;
+
+result.innerHTML="正解数は５問中"+hit+"問でした！";    
+        
+</script>
+
+</body>
+
+</html>

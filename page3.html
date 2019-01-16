@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>クイズゲーム</title>
+</head>
+
+<body>
+
+    <div style="margin: 20px">
+        <h3>絶対フォント感を身につける</h3>
+        <h6><p>注意<p>このクイズは企業のロゴやポスターなどで使用されているフォントに近しいフォントをピックアップしているため、実際のフォントとは若干異なる場合があります。</h6>
+        <h4>問題３： 次のフォントはどこで使われているでしょう？</h4>
+        
+         <div style="margin: 10px">
+            <img src="irohasu.jpg">
+        </div>
+        
+        <div style="margin: 10px"><a href="#" onclick="machigai()">綾鷹 あやたか</a></div>
+        <div style="margin: 10px"><a href="#" onclick="machigai()">午後の紅茶</a></div>
+        <div style="margin: 10px"><a href="#" onclick="seikai()">いろはす</a></div>
+    </div>
+    
+    <script>
+        
+        
+        var hit = Number(localStorage.hit);
+
+        
+        function seikai(){
+            　
+            hit = hit+1;
+            localStorage.hit = hit;
+            location.href = "page4.html";
+        }
+        
+        function machigai(){
+            
+           localStorage.hit = hit;
+           location.href = "page4.html";
+        
+        }
+        
+    </script>
+
+</body>
+
+</html>

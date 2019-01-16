@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>クイズゲーム</title>
+</head>
+
+<body>
+
+    <div style="margin: 20px">
+        <h2>絶対フォント感を身につける</h2>
+
+        <h6><p>注意<p>このクイズは企業のロゴやポスターなどで使用されているフォントに近しいフォントをピックアップしているため、実際のフォントとは若干異なる場合があります。</h6>
+        <h4>問題１： 次のフォントはどこで使われているでしょう？</h4>
+        
+        <div style="margin: 10px">
+            <img src="ikamodoki.jpg">
+        </div>
+        
+        <div style="margin: 10px"><a href="#" onclick="seikai()">スプラトゥーン</a></div>
+        <div style="margin: 10px"><a href="#" onclick="machigai()">どうぶつの森</a></div>
+        <div style="margin: 10px"><a href="#" onclick="machigai()">星のカービィ</a></div>
+    </div>
+    
+    <script>
+        
+        var hit=0;
+        
+        function seikai(){
+            
+            hit = hit+1;
+            localStorage.hit = hit;
+            location.href = "page２.html";
+        
+        }
+        
+        function machigai(){
+            
+            localStorage.hit = hit;
+            location.href = "page２.html";
+        }
+        
+    </script>
+
+</body>
+
+</html>
